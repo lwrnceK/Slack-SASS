@@ -4,16 +4,68 @@
     border:1px solid transparent;
     color: $clr-dark;
     font-weight:550;
+    position:relative;
+    border-radius: 1rem;
+
     &.bg{
         &--primary{
             background: $clr-primary;
             color:$clr-light;
             border:1px solid $clr-light;
+            &::before{
+                content: "";
+                width: 0%;
+                height: 100%;
+                background-color: $clr-light;
+                transform-origin:left;
+                display:block;
+                position:absolute;
+                top:0;
+                left:0;
+                transition: .5s ease;
+                border-radius: 1rem;
+                z-index: -1;
             }
+            &:hover::before{
+                width: 100%;
+                transition: .5s ease;
+            }
+            &:hover{
+                color: $clr-primary;
+                transition: .5s ease;
+                z-index:999;
+                border: 1px solid $clr-primary;
+            }
+        }
         &--light{
             background: $clr-light;
-            color:$clr-primary;
+            color: $clr-primary;
             border:1px solid $clr-primary;
+            &::before{
+                content: "";
+                width: 0%;
+                height: 100%;
+                background-color: $clr-primary;
+                transform-origin:left;
+                display:block;
+                position:absolute;
+                top:0;
+                left:0;
+                transition: .5s ease;
+                border-radius: 1rem;
+                z-index: -1;
+            }
+            &:hover::before{
+                width: 100%;
+                transition: .5s ease;
+            }
+            &:hover{
+                color: $clr-light;
+                transition: .5s ease;
+                z-index:999;
+                border: 1px solid $clr-light;
+            }
+            
         }
     }
 }
