@@ -8,3 +8,14 @@
     height: $height;
     object-fit:cover;
 }
+@mixin centerAll(){
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin gridEven($cols,$gap){
+    display: grid;
+    grid-template-colums:repeat($cols,1fr);
+    grid-gap:$gap;
+}
