@@ -274,4 +274,104 @@ body {
   transition: 0.5s ease;
   z-index: 999;
   border: 1px solid hsl(0, 0%, 100%);
+}
+
+.bannerbtn {
+  display: inline-block;
+  padding: 1.5rem 1rem;
+  border: 1px solid transparent;
+  color: hsl(0, 0%, 0%);
+  font-weight: 550;
+  border-radius: 0.5rem;
+}
+.bannerbtn.bg--email {
+  background: hsl(0, 0%, 100%);
+  color: hsl(293.51, 54.41%, 26.67%);
+  border: 1px solid hsl(293.51, 54.41%, 26.67%);
+}
+.bannerbtn.bg--google {
+  background: #4285F4;
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+}
+
+/* PAGES */
+.banner {
+  background: hsl(293.51, 54.41%, 26.67%);
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+.banner__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.banner__intro {
+  text-align: center;
+}
+.banner__intro h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+.banner__intro h1 span {
+  color: #ffa700;
+}
+.banner__intro p {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.banner__btn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.banner__btn a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.banner__btn a img {
+  width: 3rem;
+  position: absolute;
+  left: 0;
+  margin-left: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  height: 3rem;
+  padding: 0.5rem;
+}
+.banner__vid {
+  margin: 2rem 0rem;
+}
+.banner__vid video {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: 0;
+}
+
+.trust__wrapper {
+  background: hsl(0, 0%, 100%);
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+.trust__text {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.trust__img {
+  justify-content: center;
+}
+
+@media screen and (min-width: 940px) {
+  .banner {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    gap: 10rem;
+  }
 }/*# sourceMappingURL=main.css.map */

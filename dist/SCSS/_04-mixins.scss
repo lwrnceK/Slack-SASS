@@ -3,9 +3,8 @@
         @content;
     }
 }
-
-@mixin imgFit($width: 1rem, $height: 1rem) {
-        width $width;
-        height: $height;
-        object-fit: cover;
-    }
+@mixin imgFit($width: 1rem, $height: 1rem){
+    width: $width;
+    height: $height;
+    object-fit:cover;
+}
