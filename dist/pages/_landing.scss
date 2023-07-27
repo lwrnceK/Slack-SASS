@@ -3,7 +3,7 @@
     padding-top: 8rem;
     padding-bottom: 5rem;
     position:relative;
-    height:85vh;
+    height:65vh;
 
 
     &__wrapper{ 
@@ -172,20 +172,13 @@
         display:grid;
         grid-template-columns: 2fr 2fr;
     }
-    &__item{
-
-    }
     &__video{
-        video{
-            
-        }
-
+    @include imgFit(100%, 100%)
     }
-    &__text{
 
-    }
 
     @include mediaQuery($break-lg){
         
     }
 }
+

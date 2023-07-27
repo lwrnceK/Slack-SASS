@@ -16,6 +16,6 @@
 
 @mixin gridEven($cols,$gap){
     display: grid;
-    grid-template-colums:repeat($cols,1fr);
+    grid-template-columns:repeat($cols,1fr);
     grid-gap:$gap;
 }
