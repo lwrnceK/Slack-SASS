@@ -2,6 +2,9 @@
     background: $clr-primary;
     padding-top: 8rem;
     padding-bottom: 5rem;
+    position:relative;
+    height:85vh;
+
 
     &__wrapper{ 
         display: grid;
@@ -14,11 +17,11 @@
                 font-size:4rem;
                 font-weight: 700;
                 color:#ffffff;
+                margin-bottom: .5rem;
             
                 span{
                     color:#ffa700;
                 }
-                margin-bottom: .5rem;
             }
             p{
                 font-size: 2rem;
@@ -53,32 +56,31 @@
         }
 
         &__vid{
-            margin: 2rem 0rem; 
-           
-
             video{
-               @include imgFit(100%, 300px);
-               bottom:0;
+            @include imgFit(100%, 300px);
+            position: absolute;
+            left:0;
+            bottom:0;
             }
             
         }
         @include mediaQuery($break-lg){
-            .banner{
+            .banner{     
+                height:10vh;
                 &__wrapper{
+                    display:grid;
+                    grid-template-columns: 2fr 2fr;
+                    gap:10rem;
+                    padding-top: 2rem;
                     h1{
                         font-size:5.5rem;
                         font-weight:800;
                         width: 100%;
-                        text-align: left;
-                        
+                        text-align: left;   
                     }
                     p{
                         text-align: justify;    
-                    }
-                    display:grid;
-                    grid-template-columns: 2fr 2fr;
-                    gap:10rem;
-                    
+                    }    
                 }
                 &__intro2{
                     display:flex;
@@ -111,13 +113,23 @@
                 
                 
             }
-        }
-    
+
+            &__vid{
+                position:relative;
+                
+                video{
+                  position:unset;
+                }
+            }
+            
+}
 }
 
+
 .trust{
+    background: $clr-fwhite;
     &__wrapper{
-        background: $clr-light;
+        display:grid;
         padding-top: 2rem;
         padding-bottom: 5rem;
     }
@@ -126,40 +138,54 @@
         font-size: 1.5rem;
     }
     &__img{
-        justify-content:center;
+        display:flex;
+        margin: 0 auto;
+        font-size:3rem;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap:wrap;
+        max-width: 30rem;
+        img{
+            width:8.5rem;
+        }
     }
+
+    @include mediaQuery($break-lg){
+        &__img{
+            align-items: center;
+            display:flex;
+            max-width: 100%;
+            gap:10rem;
+            padding-top: 4rem;
+            padding-left:10rem;
+                img:nth-child(5){
+                    width:25rem;
+                } 
+        }
+
+}
 }
 
-// @include mediaQuery($break-lg){
-//     .banner{
-//         &__wrapper{
-//             display:grid;
-//             grid-template-columns: 2fr 2fr;
-//             align-items: center;
-//             gap:10rem;
-//             text-align:center;
-//         }
+.services{
+    background: $clr-fwhite;
+    &__wrapper{
+        display:grid;
+        grid-template-columns: 2fr 2fr;
+    }
+    &__item{
+
+    }
+    &__video{
+        video{
+            
+        }
+
+    }
+    &__text{
+
+    }
+
+    @include mediaQuery($break-lg){
         
-//     }
-
-//     &__btn{
-//         max-width: 30%;
-//     }
-
-    // .trust{
-    //     &__wrapper{
-    //         background: $clr-light;
-    //         padding-top: 2rem;
-    //         padding-bottom: 5rem;
-    //     }
-    //     &__text{
-    //         text-align: center;
-    //         font-size: 1.5rem;
-    //     }
-    //     &__img{
-    //         font-size:3rem;
-    //         align-items: center;
-    //         gap: 10rem;
-    //     }
-    // }
-// }
+    }
+}
