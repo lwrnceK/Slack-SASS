@@ -3,7 +3,7 @@
     padding-top: 8rem;
     padding-bottom: 5rem;
     position:relative;
-    height:65vh;
+    height:90vh;
 
 
     &__wrapper{ 
@@ -65,8 +65,8 @@
             
         }
         @include mediaQuery($break-lg){
-            .banner{     
-                height:10vh;
+            // &{
+                height:60vh;
                 &__wrapper{
                     display:grid;
                     grid-template-columns: 2fr 2fr;
@@ -89,7 +89,7 @@
                     }
                 }
                 
-            }
+            // }
         
             &__btn{
                 display:flex;
@@ -118,7 +118,7 @@
                 position:relative;
                 
                 video{
-                  position:unset;
+                position:unset;
                 }
             }
             
@@ -172,13 +172,13 @@
         display:grid;
         grid-template-columns: 2fr 2fr;
     }
-    &__video{
-    @include imgFit(100%, 100%)
+    &__item{
+        display:flex;
+        flex-direction:column;
+        gap: 2.5rem;
     }
-
-
-    @include mediaQuery($break-lg){
-        
-    }
+        video{ 
+                @include imgFit (150%, 150%);
+        }
 }
 
