@@ -23,15 +23,52 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// FOOTER
 const modal = document.querySelector('.modal');
 const btnRegion = document.querySelector('.region');
 const btnClose = document.querySelector('#closeModal');
+const overlay = document.querySelector('#overlay');
 
+const openModalHandler = () => {
+    btnRegion.classList.toggle('active');
+    btnRegion.nextElementSibling.classList.toggle('active');
+    overlay.classList.toggle('active')
+}
 
 const closeModalHandler = () =>{
     modal.classList.toggle('active');
     btnRegion.classList.toggle('active')
+    overlay.classList.toggle('active')
 }
 
-btnClose.addEventListener('click',closeModalHandler)
+
+// ________________
+
+const closeOverlay = () =>{
+    modal.classList.toggle('active');
+    btnRegion.classList.toggle('active')
+    overlay.classList.toggle('active')
+}
+
+
+btnClose.addEventListener('click',closeModalHandler);
 btnRegion.addEventListener('click',openModalHandler);
+overlay.addEventListener('click', closeOverlay);
+
+
+// console.log(overlay);
+
+var slider = tns({
+    container: '.slider',
+    items: 1,
+    slideBy: 'page',
+    autoplay: false,
+    mouseDrag: true,
+    navPosition: "bottom",
+    responsive: {
+        900: {
+            items: 4
+        }
+    }
+})
+

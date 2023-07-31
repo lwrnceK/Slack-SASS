@@ -11,20 +11,21 @@
             }
         }
         .modal{
-            padding :2rem;
+            padding:2rem;
             overflow-y: auto;
             display: none;
-            width: 100%;
-            height: 100%;
+            width: 50%;
+            height: 50%;
             position: fixed;
             background: $clr-light;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            border: 1px solid #000000;
+            top: 30rem;
+            left: 50rem;
+            
+        
             z-index: 9999;
             &.active{
-                display: block;
+            display: block;
             }
             button{
                 float:right;
