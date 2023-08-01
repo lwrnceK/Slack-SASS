@@ -596,7 +596,7 @@ body {
   background: transparent;
 }
 .header.white .container {
-  background: blue;
+  background: hsl(293.51, 54.41%, 26.67%);
   border-radius: 3rem;
   margin-top: 5rem;
   transition: 2s ease;
@@ -1092,8 +1092,14 @@ body {
   background: hsl(293.51, 54.41%, 26.67%);
 }
 .work button:hover::before,
-.work button.tns-navactive:before {
+.work button.tns-nav-active:before {
   content: "";
+  position: absolute;
+  padding: 1rem;
+  top: -0.5rem;
+  left: -0.5rem;
+  border-radius: 50%;
+  border: 1px dashed hsl(293.51, 54.41%, 26.67%);
 }
 
 .footer__left ul li {

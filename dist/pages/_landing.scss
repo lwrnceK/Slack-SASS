@@ -226,6 +226,8 @@
             border: none;
             transition: .5s ease-in-out;
         }
+
+
         button:hover{
             background: $clr-primary;
         }
@@ -243,10 +245,12 @@
         }
         button:hover::before,
         button.tns-nav-active:before{
-            content:";
+            content:"";
             position:absolute;
-            paddin
+            padding:1rem;
+            top: -.5rem;
+            left:-.5rem;
+            border-radius: 50%;
+            border: 1px dashed $clr-primary;
         }
         }
-
-}
