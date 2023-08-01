@@ -1036,6 +1036,10 @@ body {
      object-fit: cover;
 }
 
+.teams {
+  background-color: #ffffff;
+}
+
 .work {
   background-color: hsl(34, 42%, 93%);
 }
