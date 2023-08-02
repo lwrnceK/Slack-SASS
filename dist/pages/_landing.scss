@@ -185,8 +185,118 @@
 
 // TEAMS
 .teams{
-    background-color:#ffffff;
-        .
+    background: $clr-light;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    &__wrapper{
+        display:grid;
+        align-items:center;
+        margin: 0 2rem;
+    }
+    &__text{
+        display: grid;
+        align-items: center;
+        h1{
+            text-align:center;
+            font-size: 3rem;
+            margin: 2rem 0;
+            line-height: 1;
+        }
+        p{
+            font-size: 1.8rem;
+            text-align: center;
+        }
+    }
+
+    &__btn{
+        display: grid;
+        align-items: center;
+        a{
+            text-align: center;
+            margin: 1rem 0;
+        }
+    }
+    &__percentage{
+        display: grid;
+        margin-top: 1rem;
+        ul{
+            align-items: center;
+            margin: 0 auto;
+            width: 100%;
+            li{
+                align-items: center;
+                margin: 0 auto;
+                width: 100;
+                h3{
+                    font-size: 4rem;
+                    font-weight: 600;
+                    color: $clr-primary;
+                }
+                p{
+                    max-width: 50%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    @include mediaQuery($break-lg){
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        &__wrapper{
+            display: grid;
+            align-items: center;
+        }
+        &__text{
+            align-items: center;
+            text-align: center;
+            margin: 2rem 0;
+            h3{
+                font-size: 5.5rem;
+                font-weight: 700;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+        
+        &__btn{
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            gap: 1rem;
+            a{
+                padding: 1.8rem;
+                padding-left: 4rem;
+                padding-right: 4rem;
+            }
+        }
+        &__percentage{
+            padding-top: 4rem;
+            ul{
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                width: 100%;
+                justify-content: space-evenly;              
+            }
+            li{
+                align-items: center;
+                margin: 0 auto;
+                h2{
+                    font-size: 6.5rem;
+                    font-weight: 600;
+                    text-align: justify;
+                }
+                p{
+                    text-align: left;
+                    max-width: 70;
+                    margin:auto 0;
+                    font-size: 1.5rem;
+                }
+            }
+
+        }
+    }
 }
 
 // WORK SECTION

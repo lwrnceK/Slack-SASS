@@ -1037,7 +1037,117 @@ body {
 }
 
 .teams {
-  background-color: #ffffff;
+  background: hsl(0, 0%, 100%);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.teams__wrapper {
+  display: grid;
+  align-items: center;
+  margin: 0 2rem;
+}
+.teams__text {
+  display: grid;
+  align-items: center;
+}
+.teams__text h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem 0;
+  line-height: 1;
+}
+.teams__text p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.teams__btn {
+  display: grid;
+  align-items: center;
+}
+.teams__btn a {
+  text-align: center;
+  margin: 1rem 0;
+}
+.teams__percentage {
+  display: grid;
+  margin-top: 1rem;
+}
+.teams__percentage ul {
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.teams__percentage ul li {
+  align-items: center;
+  margin: 0 auto;
+  width: 100;
+}
+.teams__percentage ul li h3 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: hsl(293.51, 54.41%, 26.67%);
+}
+.teams__percentage ul li p {
+  max-width: 50%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 940px) {
+  .teams {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+  .teams__wrapper {
+    display: grid;
+    align-items: center;
+  }
+  .teams__text {
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  .teams__text h3 {
+    font-size: 5.5rem;
+    font-weight: 700;
+  }
+  .teams__text p {
+    font-size: 2rem;
+  }
+  .teams__btn {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+  .teams__btn a {
+    padding: 1.8rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .teams__percentage {
+    padding-top: 4rem;
+  }
+  .teams__percentage ul {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .teams__percentage li {
+    align-items: center;
+    margin: 0 auto;
+  }
+  .teams__percentage li h2 {
+    font-size: 6.5rem;
+    font-weight: 600;
+    text-align: justify;
+  }
+  .teams__percentage li p {
+    text-align: left;
+    max-width: 70;
+    margin: auto 0;
+    font-size: 1.5rem;
+  }
 }
 
 .work {
